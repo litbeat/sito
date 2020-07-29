@@ -1,0 +1,702 @@
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("sofiapro-light.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+header {
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    background-color: #FCE0D9;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.site-title {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 50px;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #308C9C;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sub-title {
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+navbar {
+    margin-right: 25px;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+navbar a {
+    text-decoration: none;
+    padding-right: 25px;
+    color: #CB7F15;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+main {
+    width: 700px;
+    display: flex;
+    flex-direction: column;align-items: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+main h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 70px;
+    text-transform: none;
+}
+
+main h2 {
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 50px;
+    text-transform: none;
+}
+
+.accent {
+    display: inline;
+    color: #308C9C;
+}
+
+main p {
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 18px;
+    letter-spacing: none;
+    line-height: 25px;
+    width: 700px;
+}
+
+.anchor {
+    display: block;
+    height: 30px;
+    visibility: hidden;
+}
+
+.my-journey {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FCE0D9;
+    width: 1280px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-journey h1 {
+    position: relative;
+    bottom: 60px;
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 70px;
+    text-transform: none;
+    color: #000;
+    padding-left: 50px;
+}
+
+.my-journey h2 {
+    color: #308C9C;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin: auto;
+    display: inline-block;
+    padding: 2px;
+}
+
+.my-journey ul {
+    width: 85%;
+    list-style: none;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 5px auto;
+}
+
+.my-journey ul li::before {
+    content: "\2022";
+    color: #CB7F15;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.my-journey p {
+    display: block;
+    width: 850px;
+    text-decoration: none;
+    font-weight: none;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+.phasis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+figcaption {
+    padding: 50px;
+    text-decoration: none;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+figcaption h2 {
+    display: inline;
+    color: #308C9C;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.master a {
+    text-decoration: none;
+    color: #CB7F15;
+}
+
+.master a:hover {
+    text-decoration: underline;
+}
+
+.my-journey p a {
+    text-decoration: none;
+    color: #CB7F15;
+}
+
+.my-journey p a:hover {
+    text-decoration: underline;
+}
+
+.portfolio {
+    background-color: #308C9C;
+    width: 1280px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio h1 {
+    position: relative;
+    bottom: 60px;
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 70px;
+    text-transform: none;
+    color: #000;
+    padding-left: 50px;
+}
+
+.portfolio h2 {
+    text-align: left;
+    padding-left: 55px;
+    color: #FCE0D9;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.case-studies {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 85%;
+}
+
+.museum img {
+    width: 500px;
+    height: 300px;
+}
+
+.moody-coffee img {
+    width: 500px;
+    height: 300px;
+}
+
+.museum, .moody-coffee {
+    position: relative; 
+}
+
+.overlay {
+    display: none;
+}
+
+.museum a:hover .overlay {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 90%;
+    height: 85%;
+    background: #F5F5F5;
+    opacity: 0.7;
+}
+
+.moody-coffee a:hover .overlay {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 90%;
+    height: 85%;
+    background: #F5F5F5;
+    opacity: 0.7;
+}
+
+.articles a:hover .overlay {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 470px;
+    width: 30%;
+    height: 70%;
+    background: #F5F5F5;
+    opacity: 0.7;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.articles {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.articles img {
+    width: 500px;
+}
+
+footer {
+    display: flex;  
+    background-color: #FCE0D9;
+    width: 1280px;
+    margin: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts {
+    width: 50%;
+    }
+
+.social {
+    display: inline-block;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social li {
+    display: inline;
+}
+
+footer h2 {
+    position: relative;
+    bottom: 70px;
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: none;
+    color: #000;
+    padding-left: 50px;
+}
+
+.contacts a {
+    margin-left: 30px;
+    margin-top: -10px;
+    padding-left: 20px; 
+    display: inline-block;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 55px;
+    text-decoration: none;
+    color: #308C9C;
+    text-align: left;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+.contacts p {
+    margin-top: 70px;
+    margin-left: 30px;
+    padding-left: 20px;
+    margin-bottom: 70px;
+    display: block;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+}
+
+.img-contact img {
+    width: 640px; 
+    height: max-content;
+}
+
+@media only screen and (max-width: 415px) {
+
+    header {
+        width: 100%;
+    }
+
+    .site-title {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        font-size: 16px;
+        letter-spacing: 5px;
+        padding: 2px;
+        margin: auto;
+    }
+    
+    .sub-title {
+        font-size: 16px;
+
+    }
+    navbar {
+        display: none;
+    }
+
+    main {
+        width: 85%;
+        margin-top: 80px;
+    }
+
+    main h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+    
+    main h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    main p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        width: 80%;
+    }
+
+    .my-journey {
+        width: 85%;
+        margin-top: 70px;
+    }
+    
+    .my-journey h1 {
+        position: relative;
+        bottom: 45px;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    
+    .my-journey p {
+        width: 85%;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+    .my-journey ul {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    
+    .phasis {
+        flex-wrap: wrap;
+    }
+    
+    figcaption {
+        padding: 50px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+    .portfolio {
+        width: 85%;
+        margin-top: 80px;
+        height: fit-content;
+    }
+    
+    .portfolio h1 {
+        position: relative;
+        bottom: 45px;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    
+    .portfolio h2 {
+        padding-left: 25px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        position: relative;
+        top: -20px;
+    }
+    
+    .case-studies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    
+    .museum img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .moody-coffee img {
+        width: 300px;
+        height: auto;
+    }
+
+    .articles {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .articles img {
+        width: 300px;
+        height: auto;
+    }
+    
+    footer {
+        display: flex;  
+        flex-wrap: wrap;
+        width: 85%;
+        margin-top: 50px;
+    }
+    
+    footer h2 {
+        position: relative;
+        bottom: 30px;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    
+    .contacts {
+        width: 100%;
+    }
+
+    .contacts a {
+        margin-left: 2px;
+        margin-top: 10px; 
+        display: inline-block;
+        font-size: 35px;
+    }
+    
+    .contacts p {
+        margin-top: 40px;
+        margin-left: 2px;
+        margin-bottom: 10px;
+        display: block;
+        text-align: left;
+        font-size: 15px;
+        letter-spacing: 1px;
+        width: 85%;
+    }
+
+    .img-contact {
+        display: inline;
+        margin: 50px auto;
+    }
+
+    .img-contact img {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 416px) and (max-width: 1024px) {
+    
+    .my-journey {
+        width: 85%;
+    }
+        
+    .my-journey p {
+        width: 80%;
+    }
+    
+    .phasis {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    figcaption {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+    .high-school, .neuroscience, .kindergarten {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33%;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    .master, .ux {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio {
+        width: 85%;
+    }
+
+    .case-studies {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 25px;
+    }
+    
+    .museum img {
+        width: 500px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    
+    .moody-coffee img {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .articles {
+       padding-bottom: 50px;
+    }
+
+    footer {
+        width: 85%;
+        height: fit-content;
+    }
+    
+    .contacts a {
+        margin-top: -20px;
+        margin-left: 30px; 
+        display: inline-block;
+        text-align: left;
+        font-size: 30px;
+    }
+    
+    .contacts p {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        font-size: 14px;
+        display: block;
+        padding-right: 10px;
+    }
+
+
+    .img-contact img {
+        width: 75%; 
+        height: auto;
+        margin: 80px 40px;
+    }
+
+}
+
